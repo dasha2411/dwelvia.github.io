@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="icon" href="logo.ico" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Numans&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   <header class="header">
+       <div class="logo">
+           <img src="logo.PNG" class="logoimg">
+           <h1 class="logotext">dwelvia.com</h1>
+       </div>
+       <div class="searchbar">
+           <form action="/search" method="get" class="searchform" id="searchformid">
+               <i class="fa-solid fa-magnifying-glass"></i>
+               <input type="text" name="query" placeholder="Search" class="searchinput" id="searchid">
+           </form>
+       </div>
+       <div class="login">
+           <button id="loginbutton" class="logbutton">log in</button>
+       </div>
+   </header>
+   <nav class="navbar">
+       <div class="divtext">city</div>
+       <div class="divtext">flowers</div>
+       <div class="divtext">sea</div>
+       <div class="divtext">architecture</div>
+       <div class="divtext">tree</div>
+       <div class="divtext">sunset</div>
+   </nav>
+   <div class="line"></div>
+<div class="logindiv" id="logindiv">
+   <div class="logintext">
+       <h3>Hi, if you want, you can log in to our website</h3>
+       <button id="Xbutton" class="Xbutton"><i class="fa-solid fa-xmark"></i></button>
+   </div>
+  <div class="loginbar">
+   <h4>Name</h4>
+   <div class="logindivinput"><input type="name" name="name" placeholder="Enter your name" class="logininput"></div>
+   <h4>E-mail</h4>
+   <div class="logindivinput"><input type="email" name="email" placeholder="Enter your email" class="logininput"></div>
+  </div>
+</div>
+<div class="imgcontainer" id="imgdivid">
+   <img src="https://i.pinimg.com/736x/36/9c/9d/369c9ddf62789094ff1f7cd1803dd36d.jpg" class="imgcl" data-tags="city street dessert bicycle tree cafe">
+   <img src="https://i.pinimg.com/736x/0a/b2/ab/0ab2abe9fafc812d10aec7a7b5539550.jpg" class="imgcl" data-tags="nature mountains palm tree trees besch sky clouds">
+   <img src="https://i.pinimg.com/736x/33/69/e5/3369e5a7afbe27999133049292affdd8.jpg" class="imgcl" data-tags="darkness tree trees sky forest nature">
+   <img src="https://i.pinimg.com/736x/22/91/f4/2291f4ae3b4b34572b045fc7826338ff.jpg" class="imgcl" data-tags="city night street lights cafe christmas light new year">
+   <img src="https://i.pinimg.com/736x/77/f5/84/77f584b2940359c9fcf5db940f8bf7ba.jpg" class="imgcl" data-tags="palm sky tree trees nature">
+   <img src="https://i.pinimg.com/736x/df/5f/3a/df5f3ab2c393c931798d36c4a629521a.jpg" class="imgcl" data-tags="cosmetics makeup beauty lipstick mascara">
+   <img src="https://i.pinimg.com/736x/5b/23/eb/5b23eb17573eced96735f5256cfa4861.jpg" class="imgcl" data-tags="clouds palms sky water swimming pool nature summer">
+   <img src="https://i.pinimg.com/736x/d1/a9/a0/d1a9a086c35632cbc2d7859a0b5fb7fa.jpg" class="imgcl" data-tags="house sky home clouds nature sun">
+   <img src="https://i.pinimg.com/736x/3b/d2/ec/3bd2ec7ac71ede72cb68793b83127570.jpg" class="imgcl" data-tags="mountain building buildings bridge palm tree trees sky">
+   <img src="https://i.pinimg.com/736x/f2/96/86/f2968648bfd36b19af7aa8c110476b79.jpg" class="imgcl" data-tags="darkness city street cars lights car night traffic">
+   <img src="https://i.pinimg.com/736x/62/b4/7f/62b47ff36960bae56503ecf5b3725bde.jpg" class="imgcl" data-tags="city sky building old architecture street castle">
+   <img src="https://i.pinimg.com/736x/be/18/37/be18374da8ae45155ae0b652a76c6b06.jpg" class="imgcl" data-tags="palm tree trees sky nature mountain green sky grass">
+   <img src="https://i.pinimg.com/736x/60/1d/77/601d77229f159dd563546ba1112c8c1d.jpg" class="imgcl" data-tags="sky clouds sun sea water nature beach">
+   <img src="https://i.pinimg.com/736x/ce/35/13/ce351330e9c301479722398f1eedec1f.jpg" class="imgcl" data-tags="sea sunset sky water nature beach">
+   <img src="https://i.pinimg.com/736x/12/24/b0/1224b0764b5ce356ee32b0c24ada7606.jpg" class="imgcl" data-tags="clouds mountains sky nature trees tree forest">
+   <img src="https://i.pinimg.com/736x/06/df/5d/06df5d9539810a43370b22b89c75baaf.jpg" class="imgcl" data-tags="tree trees pink">
+   <img src="https://i.pinimg.com/736x/fc/d9/2f/fcd92fcd083b72dc5d89eb6e9be8aed0.jpg" class="imgcl" data-tags="bowling ball bowling alley game numbers sport darkness lights">
+   <img src="https://i.pinimg.com/736x/ea/bc/38/eabc388ac2da01691664d261bbc9b4e6.jpg" class="imgcl" data-tags="cat sunshine sun plant nature animal">
+   <img src="https://i.pinimg.com/736x/2f/9a/d1/2f9ad137bbbcd7a0b56f73fd743c3676.jpg" class="imgcl" data-tags="sun sunset sky water sea nature beach">
+   <img src="https://i.pinimg.com/736x/24/49/23/24492346d8e795bbee0956e8208f575e.jpg" class="imgcl" data-tags="sky clouds sun sea water nature beach">
+   <img src="https://i.pinimg.com/736x/ea/f1/1c/eaf11c552ec50a6efd4bb0c5d2f6d71e.jpg" class="imgcl" data-tags="moon moonlight sky evening night star stars">
+   <img src="https://i.pinimg.com/736x/2e/77/73/2e7773a6707c4de06ac9726bad5010ef.jpg" class="imgcl" data-tags="tulips flower flowers painting art paints pink">
+   <img src="https://i.pinimg.com/736x/4d/cd/17/4dcd17be7b4fefb9b67d9e050e92d4b9.jpg" class="imgcl" data-tags="tulips flower flowers pink buquet">
+   <img src="https://i.pinimg.com/736x/c6/2d/98/c62d9888c6b0d8b97695cf55bbc19c0c.jpg" class="imgcl" data-tags="nature water sky sunset sun swan animal lake">
+   <img src="https://i.pinimg.com/736x/36/91/89/3691899b1986f6771d0f83dd60edd815.jpg" class="imgcl" data-tags="building house yard trees sky clouds city street">
+   <img src="https://i.pinimg.com/736x/9b/87/af/9b87af0481351487270f272be7c58a0f.jpg" class="imgcl" data-tags="mountain tree sky trees nature forest">
+   <img src="https://i.pinimg.com/736x/22/76/c6/2276c674ecf884afff75994b0019f2ea.jpg" class="imgcl" data-tags="city street building architecture">
+   <img src="https://i.pinimg.com/736x/3b/5f/02/3b5f028205c97dde37f5201b6869929c.jpg" class="imgcl" data-tags="sea sky water nature beach clouds">
+   <img src="https://i.pinimg.com/736x/a5/8d/6d/a58d6d2e6a59451534d1d5c0b33fede6.jpg" class="imgcl" data-tags="sun sunset sky clouds tree trees">
+   <img src="https://i.pinimg.com/736x/8c/af/00/8caf0080bc1f615596eca83c93429f93.jpg" class="imgcl" data-tags="sky water sea nature stones">
+   <img src="https://i.pinimg.com/736x/1d/3a/84/1d3a842eed2570f7e27b9d491c9f34c0.jpg" class="imgcl" data-tags="tulips flower flowers pink">
+   <img src="https://i.pinimg.com/736x/42/57/8b/42578b5aa7470dc514c2fdf73170b310.jpg" class="imgcl" data-tags="sun sunset sky clouds tree trees">
+   <img src="https://i.pinimg.com/736x/17/45/81/174581562e524e2b4f93ff880522992d.jpg" class="imgcl" data-tags="flowers pink flower nature city street">
+   <img src="https://i.pinimg.com/736x/9c/73/3e/9c733e4052074a1c02639e9b2566a7e9.jpg" class="imgcl" data-tags="city street building architecture sky">
+   <img src="https://i.pinimg.com/736x/94/39/5d/94395def6345c5041e3c6b11aa08139e.jpg" class="imgcl" data-tags="street city sky">
+   <img src="https://i.pinimg.com/736x/7e/3c/26/7e3c264240f14a88fdeb01942feb23b7.jpg" class="imgcl" data-tags="sea sky water nature yaht boat">
+   <img src="https://i.pinimg.com/736x/69/bd/50/69bd509ac5bbe994eaac3daac8d2e7da.jpg" class="imgcl" data-tags="sky nature tree trees forest mountain view">
+   <img src="https://i.pinimg.com/736x/09/8d/85/098d8507be52c42bfa37a989f2708457.jpg" class="imgcl" data-tags="water tree trees nature waterfall">
+   <img src="https://i.pinimg.com/736x/f1/be/ea/f1beea63cbdf494591753690a44bee7a.jpg" class="imgcl" data-tags="city street building architecture sky palm palms trees tree">
+   <img src="https://i.pinimg.com/736x/48/46/3a/48463a39d7abfa64fb555a00f7a37f43.jpg" class="imgcl" data-tags="painting art sunshine sun">
+   <img src="https://i.pinimg.com/736x/52/1e/40/521e4075dafd1f9d0f5824ac45a9a13a.jpg" class="imgcl" data-tags="flower flowers buquet pink roses">
+   <img src="https://i.pinimg.com/736x/2d/67/51/2d6751c0d8a4faeec73f90e6cbb30eef.jpg" class="imgcl" data-tags="sky nature building mountain view">
+   <img src="https://i.pinimg.com/736x/9c/22/c8/9c22c8af5e9b967edd6ab42f5f02cb3f.jpg" class="imgcl" data-tags="sky tree trees nature ">
+   <img src="https://i.pinimg.com/736x/f1/bb/9c/f1bb9cf653a1514bd5c33d6996758555.jpg" class="imgcl" data-tags="trees tree lights present christmas light new year">
+   <img src="https://i.pinimg.com/736x/78/eb/fb/78ebfbceef1c76dc0164e399caa04f51.jpg" class="imgcl" data-tags="meal meat food dish plate salad">
+   <img src="https://i.pinimg.com/736x/7a/74/b4/7a74b4d4b538effea7817d9a1ecc0309.jpg" class="imgcl" data-tags="sea water blue stones stone">
+   <img src="https://i.pinimg.com/736x/e7/e1/f8/e7e1f8fa40c7beace016a71c38ffd62b.jpg" class="imgcl" data-tags="tree trees leafs nature orange autumn fall">
+   <img src="https://i.pinimg.com/736x/b5/4a/a3/b54aa32b37cce0e49cd7a95ec17ec460.jpg" class="imgcl" data-tags="sunset clouds sun building house sky">
+   <img src="https://i.pinimg.com/736x/dd/3a/f6/dd3af6289b98bf393427497d4527c7ae.jpg" class="imgcl" data-tags="sky buildings clouds city mountain view">
+   <img src="https://i.pinimg.com/736x/35/25/bd/3525bd54c7dff507ac8dd0a456c13c17.jpg" class="imgcl" data-tags="tree city street building house">
+   <img src="https://i.pinimg.com/736x/d2/ab/3f/d2ab3feb4b9b1f8da8106369a4d29a1d.jpg" class="imgcl" data-tags="flower flowers buquet pink roses">
+   <img src="https://i.pinimg.com/736x/5e/6e/2e/5e6e2eebca6e0fafed32b97978eb1de8.jpg" class="imgcl" data-tags="christmas wreath decoraition new year">
+   <img src="https://i.pinimg.com/736x/7f/24/02/7f24020dd8b460d3e55f52a9c6902692.jpg" class="imgcl" data-tags="flower flowers buquet pink">
+   <img src="https://i.pinimg.com/736x/a8/a0/b6/a8a0b6776b413dfc2182dbb06d064185.jpg" class="imgcl" data-tags="natyre mountain sky clouds sun">
+   <img src="https://i.pinimg.com/736x/09/53/f0/0953f0925d77852923f7d994c99a3abf.jpg" class="imgcl" data-tags="meal food dish plat">
+   <img src="https://i.pinimg.com/736x/12/c5/38/12c5387502a22fd60eadb2440750f8e8.jpg" class="imgcl" data-tags="sea city evening sky sunset light lights water beach">
+   <img src="https://i.pinimg.com/736x/c3/ac/4a/c3ac4a32306624adbbc267af38a3f530.jpg" class="imgcl" data-tags="roses flower flowers painting art paints pink">
+   <img src="https://i.pinimg.com/736x/f3/71/4d/f3714da6042eb2527b1371a829464a2e.jpg" class="imgcl" data-tags="tree trees green nature sky view">
+   <img src="https://i.pinimg.com/736x/c6/ff/6a/c6ff6a302569ebea9e9ab4a8235f2468.jpg" class="imgcl" data-tags="food meal birthday cake dessert flowers buquet">
+   <img src="https://i.pinimg.com/736x/02/f9/79/02f97980fed51ffd1a93e6867da6c2ac.jpg" class="imgcl" data-tags="city street building architecture">
+   <img src="https://i.pinimg.com/736x/6c/d1/59/6cd1590aa89d5f9876b8c0c48b202745.jpg" class="imgcl" data-tags="mountains view sky flowers natyre">
+   <img src="https://i.pinimg.com/736x/b0/e5/02/b0e5025401f3ba02e440465cba034afe.jpg" class="imgcl" data-tags="flight sun view sky sunshine mountains">
+   <img src="https://i.pinimg.com/736x/2e/fd/68/2efd68e3ec2c796762537edfed5b7314.jpg" class="imgcl" data-tags="food flowers buquet sushi meal">
+   <img src="https://i.pinimg.com/736x/de/a0/30/dea0309cb1e63220fc3541e8fa91d382.jpg" class="imgcl" data-tags="reataurant bar">
+   <img src="https://i.pinimg.com/736x/3c/25/c3/3c25c3d500a81ca3281fdfc0f9252496.jpg" class="imgcl" data-tags="building house palm palms trees sky clouds city street">
+   <img src="https://i.pinimg.com/736x/6f/19/fb/6f19fbd68dcb0a0b7b08f95871154918.jpg" class="imgcl" data-tags="flowers white building city street">
+   <img src="https://i.pinimg.com/736x/6f/21/d8/6f21d8216692f07084c324f409d9170e.jpg" class="imgcl" data-tags="flight sun sunst view sky sunshine">
+   <img src="https://i.pinimg.com/736x/80/52/19/80521989a2248122e42516a209dc12a7.jpg" class="imgcl" data-tags="building house trees sky clouds city street">
+</div>
+<footer>
+   <div class="footerdiv">
+       </br><h5>&copy; 2025y dwelvia</h3>
+       </br><h5>created by Dariia Polkovnyk</h3>
+       </br><h5 class="h53">all rights reserved</h3>
+   </div>
+</footer>
+   <script src="skript.js"></script>   
+</body>
+</html>

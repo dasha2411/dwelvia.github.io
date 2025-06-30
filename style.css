@@ -1,0 +1,289 @@
+body {
+   margin: 0;
+   background: #fcfbf2;
+   display: flex; /* Робимо body флекс-контейнером */
+   flex-direction: column; /* Розташовуємо елементи-діти по вертикалі */
+   min-height: 100vh; /* Забезпечуємо, що body займає щонайменше повну висоту вікна перегляду */
+}
+
+
+/* Ваш існуючий CSS для інших елементів */
+
+
+.header {
+   display: flex;
+   position: sticky; /* Змінено з fixed на sticky для кращого потоку з контентом */
+   z-index: 1;
+   height: 60px;
+   width: 100vw;
+   top: 0;
+   left: 0;
+   background: #fcfbf2; /* Додано фон до хедера, щоб він перекривав контент при прокрутці */
+}
+
+
+.logo {
+   width: 15%;
+   /* background: #fcfbf2; - Видалено, оскільки хедер має фон */
+}
+
+
+.logoimg {
+   display: inline-block;
+   width: 22%;
+   height: 100%;
+   margin-top: 1px;
+}
+
+
+h1 {
+   display: inline-block;
+   width: 50%;
+   transform: translateY(-32px);
+   color: #486572;
+   font-size: 26px;
+   margin: 5px 0 0 15px;
+   position: relative;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   transform: translateY(-20px);
+}
+
+
+.searchbar {
+   width: 70%;
+   /* background: #fcfbf2; - Видалено, оскільки хедер має фон */
+}
+
+
+.searchform {
+   margin: 6px 0;
+   display: flex;
+   height: 48px;
+   border-radius: 30px;
+   background-color: #486572;
+   overflow: hidden;
+   padding-left: 10px;
+}
+
+
+.searchinput {
+   padding: 0 10px;
+   border: none;
+   flex-grow: 1;
+   background-color: #486572;
+   color: #fcfbf2;
+   margin-left: 5px;
+}
+
+
+.searchinput[type="text"] {
+   color: #fcfbf2;
+   font-size: 15px;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+
+input::placeholder {
+   color: #fcfbf2;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+
+.searchinput:focus {
+   outline: none;
+}
+
+
+.fa-solid {
+   color: #fcfbf2;
+   font-size: 25px;
+   padding-top: 12px;
+}
+
+
+.login {
+   width: 15%;
+   /* background: #fcfbf2; - Видалено, оскільки хедер має фон */
+   display: inline-block;
+}
+
+
+.fa-solid.fa-bars { /* Виправлено селектор */
+   color: #486572;
+   display: inline-block;
+   margin-top: 10px;
+}
+
+
+.Xbutton {
+   all: unset;
+}
+
+
+.logbutton {
+   all: unset;
+   display: inline-block;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #486572;
+   transform: translateY(15px) translateX(90px);
+   font-size: 26px;
+   margin-left: 1px;
+}
+
+
+.logindiv {
+   width: 700px;
+   height: 330px;
+   z-index: 1;
+   background: rgb(72, 101, 114, 0.4);
+   backdrop-filter: blur(5px);
+   border-radius: 40px;
+   position: fixed;
+   margin-top: 170px;
+   margin-left: 30%;
+   padding: 5px 20px;
+   display: none;
+}
+
+
+.logintext {
+   display: flex;
+   justify-content: space-between;
+   margin: 4px 15px;
+   transform: translateY(10px);
+}
+
+
+h3 {
+   display: inline-block;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #fcfbf2;
+}
+
+
+.navbar {
+   display: flex;
+   justify-content: space-around;
+   gap: 20px;
+   background-color: #fcfbf2;
+   margin: 0;
+   margin-top: 0px;
+}
+
+
+.divtext {
+   display: inline-block;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+   font-size: 20px;
+   color: #486572b2;
+}
+
+
+.line {
+   border-top: 2px solid #486572a3;
+}
+
+
+.logininput {
+   display: flex;
+   border: none;
+   background-color: #fcfbf2;
+   color: #486572;
+   height: 48px;
+   width: 94%;
+   border-radius: 30px;
+   justify-content: center;
+   overflow: hidden;
+   padding: 0 20px;
+}
+
+
+h4 {
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #fcfbf2;
+   margin-left: 10px;
+   margin-top: 25px;
+   font-size: 20px;
+}
+
+
+/* Це правило для placeholder продубльовано, можна об'єднати з попереднім, якщо можливо */
+/* input::placeholder {
+   color: #486572;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+} */
+
+
+.logininput:focus {
+   outline: none;
+}
+
+
+.imgcontainer img {
+   width: 320px;
+   border-radius: 5px;
+   break-inside: avoid-column;
+   margin-top: 15px;
+   transition: transform 2s;
+}
+
+
+.imgcontainer {
+   column-count: 5;
+   column-gap: 7px;
+   margin: 0 auto;
+   padding: 20px;
+   max-width: 1700px;
+   flex-grow: 1; /* Дозволяє контейнеру зображень займати доступний простір, штовхаючи футер вниз */
+}
+
+
+.imgcontainer img:hover {
+   transform: scale(1.05);
+}
+
+
+footer { /* Додано цей стиль до самого футера */
+   margin-top: auto; /* Відштовхує футер до низу */
+}
+
+
+.footerdiv {
+   background: rgb(72, 101, 114, 0.8);
+   width: 100%;
+   height: 130px;
+   margin-top: 15px;
+   padding-bottom: 10px;
+}
+
+
+h5 {
+   font-size: 15px;
+   margin: 4px;
+   text-align: center;
+   font-family: "Numans", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   color: #fcfbf2;
+}
+
+
+.imgcl.hidden {
+   display: none;
+}
