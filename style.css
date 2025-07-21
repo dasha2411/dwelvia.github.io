@@ -288,5 +288,6 @@ h5 {
    display: none;
 }
 
-@media screen and (max-width: 1000px)
-{background: olive;}
+@media screen and (max-width: 1000px){
+body{background-color: olive;}
+}
